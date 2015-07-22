@@ -1750,7 +1750,7 @@ int main(int argc, char *argv[]) {
       }
 
       if(ykpiv_authenticate(state, key) != YKPIV_OK) {
-        fprintf(stderr, "Failed authentication with the applet.\n");
+        fprintf(stderr, "Failed management key (-k option) authentication with the applet.\n");
         return EXIT_FAILURE;
       }
       if(verbosity) {
